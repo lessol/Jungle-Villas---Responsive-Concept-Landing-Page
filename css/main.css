@@ -1,0 +1,215 @@
+body {
+  background: #efeed7;
+  background: radial-gradient(circle, #efeed7 0%, white 100%);
+  background-position: center;
+  margin: 0.5em;
+  padding: 0;
+}
+
+.navbar {
+  background-color: white;
+  border-bottom: 0.5px solid gray;
+  width: 100%;
+  line-height: 5em;
+  height: 5em;
+  font-size: 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Libre Baskerville";
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar a:hover {
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.navbar .left-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar .nav-logo {
+  float: left;
+  height: inherit;
+  line-height: inherit;
+  padding: 0 1em;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Libre Baskerville";
+  color: black;
+  font-weight: bold;
+}
+
+.navbar .nav-logo span {
+  color: #8e919b;
+}
+
+.navbar .open {
+  padding: 0 1em;
+  cursor: pointer;
+}
+
+.navbar nav {
+  display: none;
+}
+
+.navbar .nav-tab {
+  float: right;
+  background-color: white;
+  width: 100%;
+  height: 40vh;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.navbar .nav-tab .close {
+  margin-right: 0.5px;
+  margin-bottom: 10px;
+  width: 0.8em;
+  cursor: pointer;
+}
+
+.navbar ul {
+  margin-top: 2em;
+  text-align: center;
+  list-style: none;
+  height: inherit;
+  line-height: inherit;
+  padding-right: 3.5em;
+}
+
+.navbar ul li {
+  display: block;
+}
+
+.navbar ul li a {
+  display: block;
+  text-align: center;
+  color: black;
+  font-weight: bolder;
+}
+
+.content {
+  font-family: "Libre Baskerville";
+  color: black;
+  margin-top: 5em;
+}
+
+.content .content-info {
+  width: 100%;
+}
+
+.content p {
+  text-align: left;
+}
+
+.content .btns {
+  text-decoration: none;
+  border: 1px solid black;
+  background-color: transparent;
+  color: black;
+  margin-right: 0.5em;
+  height: 5%;
+  font-family: "Libre Baskerville";
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.content .btns a {
+  text-decoration: none;
+  color: black;
+}
+
+.image-display {
+  position: absolute;
+  width: 35%;
+  top: 3.8em;
+  left: 14em;
+  text-align: center;
+  -webkit-animation: hue-shift 5s infinite alternate;
+          animation: hue-shift 5s infinite alternate;
+}
+
+.hue-shift {
+  -webkit-animation: hue-shift 5s infinite alternate;
+          animation: hue-shift 5s infinite alternate;
+}
+
+@-webkit-keyframes hue-shift {
+  from {
+    -webkit-filter: hue-rotate(0);
+            filter: hue-rotate(0);
+  }
+  to {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes hue-shift {
+  from {
+    -webkit-filter: hue-rotate(0);
+            filter: hue-rotate(0);
+  }
+  to {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+  }
+}
+
+.gallery {
+  border-radius: 0.2em;
+  margin-top: 2em;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.gallery .picture {
+  display: inline-block;
+}
+
+.gallery .picture .nature {
+  width: 100%;
+}
+
+.map iframe {
+  width: 100%;
+  height: 30vh;
+}
+
+.whitespace-container .whitespace {
+  height: 1vh;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+@media screen and (max-width: 380px) {
+  .content-title span {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 380px) {
+  .content-img {
+    display: none;
+  }
+  .map iframe {
+    width: 100%;
+    height: 50vh;
+  }
+}
+/*# sourceMappingURL=main.css.map */
